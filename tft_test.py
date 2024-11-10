@@ -12,8 +12,8 @@ GPIO.setup(TFT_CS, GPIO.OUT)
 GPIO.setup(TFT_RESET, GPIO.OUT)
 GPIO.setup(TFT_RS, GPIO.OUT)
 
-GPIO.output(TFT_CS, GPIO.HIGH)
-GPIO.output(TFT_RESET, GPIO.LOW)
+GPIO.output(TFT_CS, GPIO.LOW)
+GPIO.output(TFT_RESET, GPIO.HIGH)
 
 spi = spidev.SpiDev()
 spi.open(0,0)
