@@ -21,14 +21,14 @@ spi.max_speed_hz = 32000000
 
 def send_command(cmd):
     GPIO.output(TFT_RS, GPIO.LOW)
-    spi.writebytes([cmd])
+    spi.xfer([cmd])
 
 def send_data(data):
     GPIO.output(TFT_RS, GPIO.HIGH)
     if isinstance(data, list):
-        spi.writebytes(data)
+        spi.xfer(data)
     else:
-        spi.writebytes([data])
+        spi.xfer([data])
 
 def display_image(buffer):
     send_command(0x2C)
