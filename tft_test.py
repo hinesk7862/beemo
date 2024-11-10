@@ -24,7 +24,7 @@ def send_command(cmd):
     spi.xfer([cmd])
 
 def send_data(data):
-    GPIO.output(TFT_RS, GPIO.LOW)
+    GPIO.output(TFT_RS, GPIO.HIGH)
     if isinstance(data, list):
         spi.xfer(data)
     else:
