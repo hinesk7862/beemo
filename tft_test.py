@@ -20,11 +20,11 @@ spi.open(0,0)
 spi.max_speed_hz = 32000000
 
 def send_command(cmd):
-    GPIO.output(TFT_RS, GPIO.LOW)
+    GPIO.output(TFT_RS, GPIO.HIGH)
     spi.xfer([cmd])
 
 def send_data(data):
-    GPIO.output(TFT_RS, GPIO.HIGH)
+    GPIO.output(TFT_RS, GPIO.LOW)
     if isinstance(data, list):
         spi.xfer(data)
     else:
