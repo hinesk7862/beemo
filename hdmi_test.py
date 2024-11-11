@@ -12,6 +12,7 @@ buf = np.memmap('/dev/fb0', dtype='uint16',mode='w+', shape=(576,720))
 print(buf)
 # fill with white
 
-for xPos,x in enumerate(buf):
-    for yPos, y in enumerate(x):
-        buf[x,y] = 0xbf17
+b = np.full((576, 720), 0xffff)
+
+while True:
+    buf[:] = b
