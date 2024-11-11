@@ -19,3 +19,8 @@ b = np.full((screen_height,screen_width), 0xaef5)
 
 while True:
     buf[:] = b
+    buf[200:100] = 0x31c6
+    buf[201:100] = 0x31c6
+    buf[201:101] = 0x31c6
+    buf[200:101] = 0x31c6
+
