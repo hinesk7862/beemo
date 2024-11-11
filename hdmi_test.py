@@ -9,7 +9,7 @@ os.system ("TERM=linux setterm -foreground black -clear all >/dev/tty0")
 # fbset -fb /dev/fb0 
 buf = np.memmap('/dev/fb0', dtype='uint16',mode='w+', shape=(576,720))
 
-# fill with an off green
+# fill with white
 buf[:] = 0xbf17
 
 for x in range(720):
