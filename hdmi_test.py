@@ -14,7 +14,7 @@ buf[:] = 0xbf17
 
 for x in range(720):
     # create random noise (16 bit RGB)
-    b = 0xbf17
+    b = [0xbf17]
     # make vertical line at x black
     b[:,x]=0
     # push to screen
