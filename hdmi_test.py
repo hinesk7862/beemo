@@ -11,3 +11,7 @@ buf = np.memmap('/dev/fb0', dtype='uint16',mode='w+', shape=(576,720))
 
 print(buf)
 # fill with white
+
+for x in buf:
+    for y in x:
+        y = 0xbf17
