@@ -4,7 +4,7 @@ import os
 # this turns off the cursor blink:
 os.system ("TERM=linux setterm -foreground black -clear all >/dev/tty0")
 
-screen_width = 480
+screen_width = 100
 screen_height = 800
 
 # this is the frambuffer for analog video output - note that this is a 16 bit RGB
