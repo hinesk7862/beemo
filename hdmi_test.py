@@ -17,6 +17,5 @@ print(buf)
 
 b = np.full((screen_height,screen_width), 0xaef5)
 
-while True:
-    buf[:] = b
-    buf[100:200] = 0x31c6
+buf[:] = b
+buf[100:200] = 0x31c6
