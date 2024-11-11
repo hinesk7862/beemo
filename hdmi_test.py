@@ -15,7 +15,7 @@ buf = np.memmap('/dev/fb0', dtype='uint16',mode='w+', shape=(screen_height,scree
 print(buf)
 # fill with white
 
-b = np.full((screen_height,screen_width), 0x8f51)
+b = np.full((screen_height,screen_width), 0xaef5)
 
 while True:
     buf[:] = b
