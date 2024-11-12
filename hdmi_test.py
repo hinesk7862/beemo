@@ -17,7 +17,7 @@ b5 = (b*31)//255
 
 rgb565 = (r5 << 11) | (g6 <<5) | b5
 
-print(rgb565)
+print(hex(rgb565))
 # this turns off the cursor blink:
 os.system ("TERM=linux setterm -foreground black -clear all >/dev/tty0")
 
