@@ -1,6 +1,6 @@
 import numpy as np
 import os
-import imageio.v3 as iio
+import imageio as iio
 
 im = iio.imread('beemopic.png')
 print(im)
