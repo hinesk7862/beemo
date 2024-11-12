@@ -3,8 +3,17 @@ import os
 import imageio as iio
 
 im = iio.imread('beemopic.png')
-print(im[1,1,:])
+r = im[1:1:1] 
+g = im[1:1:2]
+b = im[1:1:3]
 
+r5 = (r*31)//255
+g6 = (g*63)//255
+b5 = (b*31)//255
+
+rgb565 = (r5 << 11) | (g6 <<5) | b5
+
+print(rgb565)
 # this turns off the cursor blink:
 os.system ("TERM=linux setterm -foreground black -clear all >/dev/tty0")
 
