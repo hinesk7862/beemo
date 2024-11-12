@@ -3,9 +3,9 @@ import os
 import imageio as iio
 
 im = iio.imread('beemopic.png')
-r = im[1:1:1] 
-g = im[1:1:2]
-b = im[1:1:3]
+r = im[1,1,1] 
+g = im[1,1,2]
+b = im[1,1,3]
 
 print(r)
 print(g)
