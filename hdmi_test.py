@@ -2,7 +2,7 @@ import numpy as np
 import os
 import imageio as iio
 
-im = iio.imread('beemopic.png')
+im = iio.imread('beemopic.png', mode="RGBA")
 r = im[1,1,1] 
 g = im[1,1,2]
 b = im[1,1,3]
