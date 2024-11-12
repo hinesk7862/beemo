@@ -3,7 +3,7 @@ import os
 import imageio as iio
 
 im = iio.imread('beemopic.png')
-print(im)
+print(im[1,1,:])
 
 # this turns off the cursor blink:
 os.system ("TERM=linux setterm -foreground black -clear all >/dev/tty0")
